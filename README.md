@@ -1,3 +1,2 @@
-# Get Started!
-
-Add files and start typing 🎉
+# Powerd By 'Roman
+Discord.JS v14 Slash Uyumlu Altyapı
