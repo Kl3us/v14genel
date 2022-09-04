@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/rest": "^1.0.0",
-    "discord-api-types": "^0.36.3",
+    "@discordjs/rest": "^1.1.0",
+    "discord-api-types": "^0.37.5",
     "discord-sync-commands": "^0.3.0",
     "discord.js": "^14.0.3",
     "express": "^4.18.1",
