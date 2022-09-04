@@ -1,2 +1,5 @@
 # Powerd By 'Roman
-Discord.JS v14 Slash Uyumlu Altyapı
+
+BU ALTYAPI ROMAN TARAFINDAN KODLANIP, SAYGI DEĞER BETAYA HEDİYE EDİLMİŞTİR.
+
+BETA >>> YOUTUBE
