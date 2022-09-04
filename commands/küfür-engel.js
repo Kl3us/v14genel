@@ -23,7 +23,15 @@ module.exports = {
        return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Mesajları Yönet` yetkisine ihtiyacın var." }], ephemeral: true })
      }
     
-   
+     const data = db.fetch(`kfrEngel_${interaction.guild.id}`)
+     const value = interaction.options.getString("durum")
+     
+     if(value === "") {
+       
+     } else {
+       
+     }
+    
   }
 
 };
