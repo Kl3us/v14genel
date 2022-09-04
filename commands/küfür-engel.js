@@ -26,9 +26,31 @@ module.exports = {
      const data = db.fetch(`kfrEngel_${interaction.guild.id}`)
      const value = interaction.options.getString("durum")
      
-     if(value === "") {
+     if(value === "aktif") {
+       
+       if(data) return  interaction.reply({ embeds: [{
+         description: "❌ **|** Küfür engel sistemi zaten `aktif` edilmiş.",
+         color: 0xED4245
+       }] })
+       
+       db.set(`kfrEngel_${interaction.guild.id}`, true)
+       interaction.reply({ embeds: [{
+         description: "✅ **|** Küfür engel sistemi başarıyla `aktif` edildi.",
+         color: 0x57F287
+       }] })
        
      } else {
+       
+       if(!data) return  interaction.reply({ embeds: [{
+         description: "❌ **|** Küfür engel sistemi zaten `de-aktif` edilmiş.",
+         color: 0xED4245
+       }] })
+       
+       db.delete(`kfrEngel_${interaction.guild.id}`)
+       interaction.reply({ embeds: [{
+         description: "✅ **|** Küfür engel sistemi başarıyla `de-aktif` edildi.",
+         color: 0x57F287
+       }] })
        
      }
     
