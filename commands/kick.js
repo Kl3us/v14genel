@@ -1,8 +1,8 @@
 const { Client, EmbedBuilder } = require("discord.js");
 
 module.exports = {
-  name: "ban",
-  description: "Birini sunucudan banlayabilirsiniz.",
+  name: "kick",
+  description: "Birini sunucudan atabilirsiniz.",
   options: [{
     type: 6,
     name: "user",
@@ -14,11 +14,11 @@ module.exports = {
   run: async(client, interaction, db) => {
 
       
-    const user = interaction.options.getUser("user")
+    const user = interaction.options.getMember("user")
     
-    interaction.guild.members.ban(user)
+    user.kick();
     interaction.reply({ embeds: [{
-      description: "✅ **|** `"+user.tag+"` sunucudan başarıyla yasaklandı.",
+      description: "✅ **|** `"+user.tag+"` sunucudan başarıyla atıldı.",
       color: 0x57F287
     }]})
     

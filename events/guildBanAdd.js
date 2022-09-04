@@ -8,7 +8,7 @@ module.exports = async(client, ban) => {
     const embed = new EmbedBuilder()
     .setColor("Red")
     .setTitle("Biri Banlandı")
-    .addFields({ name: "Banlanan", value: "```"+ban.user.tag+"```", inline: true }, { name: "Sebep", value: "```"+ban.reason+"```", inline: true })
+    .addFields({ name: "Banlanan", value: "```"+ban.user.tag+"```", inline: true }, { name: "Sebep", value: "```"+ban.reason || "Bilinmiyor"+"```", inline: true })
     .setFooter({text:`${ban.guild.name}`, iconURL: `${client.user.displayAvatarURL({ dynmaic: true })}`})
     .setTimestamp()
     
