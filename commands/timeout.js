@@ -23,6 +23,13 @@ module.exports = {
     if(!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
        return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Yönetici` yetkisine ihtiyacın var." }], ephemeral: true })
      }
+    
+  const member = interaction.options.getMember("user")
+    
+    if(user.id === interaction.guild.ownerId) return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu sunucu sahibinde kullanamazsın." }], ephemeral: true })
+    if(user.id === interaction.user.id) return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kendinde kullanamazsın." }], ephemeral: true })
+    if(member.permissions.has(PermissionsBitField.Flags.Administrator)) return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu yönetici izni olan birinde kullanamazsın." }], ephemeral: true })
+    
       
     const user = interaction.options.getMember("user")
     const time = interaction.options.getString("süre") 
