@@ -3,7 +3,7 @@ const ms = require("ms")
 
 module.exports = {
   name: "timeout",
-  description: "Birini sunucudan banlayabilirsiniz.",
+  description: "Susturmak istediğiniz birini susturabilirsiniz.",
   options: [{
     type: 6,
     name: "user",
