@@ -30,7 +30,7 @@ module.exports = {
     
       const embed = new EmbedBuilder()
       .setTitle(`${client.user.username} - Yardım Menüsü`)
-      .setDescription("Merhabalar değerleri kullanıcımız, şuan sizlere toplam **5** komut ile hizmet vermekteyim, bot ile ilgili birkaç bilgi edinmek istiyorsan aşağıdaki menüden ilgili menüyü seçerek ilgili yazıya ulaşabilirsin.")
+      .setDescription("Merhabalar değerleri kullanıcımız, şuan sizlere toplam **8** komut ile hizmet vermekteyim, bot ile ilgili birkaç bilgi edinmek istiyorsan aşağıdaki menüden ilgili menüyü seçerek ilgili yazıya ulaşabilirsin.")
       .setColor("Blue")
       .addFields({
         name: "/ban",
@@ -60,6 +60,16 @@ module.exports = {
       {
         name: "/istatistik",
         value: "Botun birkaç bilgisine göz atabilirsiniz.",
+        inline: true
+      },
+      {
+        name: "/küfür engel",
+        value: "Sunucudaki küfürleri engeller.",
+        inline: true
+      },
+      {
+        name: "/reklam engel",
+        value: "Sunucudaki reklamları engeller.",
         inline: true
       })
       .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })

@@ -1,11 +1,12 @@
 const db = require("orio.db")
 const kelimeler = require("../kfr.json");
+const { PermissionsBitField } = require("discord.js")
 const linkler = require("../lnks.json");
 
 module.exports = async(client, message) => {
   
   if(message.author.bot) return;
-  if(message.member.permissions.has(Permissions.FLAGS.MANAGE_MESSAGES)) return;
+  if(message.member.permissions.has(PermissionsBitField.Flags.ManageMessages)) return;
   
   const kfrEngel = db.fetch(`kfrEngel_${message.guild.id}`)
   const lnkEngl = db.fetch(`rklmEngel_${message.guild.id}`)
@@ -21,7 +22,7 @@ module.exports = async(client, message) => {
         {
             message.delete();
             message.channel.send({embeds:[{
-            description:`Hey ${message.author}, bu sunucuda küfür engel sistemi bulunuyor.`,
+            description:`:x: **|** Hey ${message.author}, bu sunucuda küfür engel sistemi bulunuyor.`,
             color: 0xED4245
                 }]
             });
@@ -40,7 +41,7 @@ module.exports = async(client, message) => {
         {
             message.delete();
             message.channel.send({embeds:[{
-             description:`Hey ${message.author}, bu sunucuda reklam engel sistemi bulunuyor.`,
+             description:`:x: **|** Hey ${message.author}, bu sunucuda reklam engel sistemi bulunuyor.`,
             color: 0xED4245
                 }]
             });
