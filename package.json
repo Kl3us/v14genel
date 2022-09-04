@@ -1,26 +1,28 @@
 {
-  "name": "v14altyapi",
-  "version": "1.0.0",
-  "description": "",
+  "//1": "Discord bot altyapı!",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "Discord hazır altyapı",
+  "name": "hello-express",
+  "version": "0.0.1",
+  "description": "Glitch Discord Botu.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@discordjs/rest": "^1.1.0",
-    "discord-api-types": "^0.37.5",
-    "discord-sync-commands": "^0.3.0",
-    "discord.js": "^14.0.3",
-    "express": "^4.18.1",
-    "orio.db": "^3.1.2",
-    "tslib": "^2.4.0",
-    "undici": "^5.10.0",
-    "@discordjs/collection": "^1.1.0"
+    "discord.js": "^14.3.0",
+    "orio.db": "3.1.2"
   },
   "engines": {
     "node": "16.x"
-  }
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }

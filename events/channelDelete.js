@@ -6,7 +6,7 @@ module.exports = async(client, channel) => {
   if(db.fetch(`log_${channel.guild.id}`)) {
     
     const embed = new EmbedBuilder()
-    .setTitle("#️⃣ Bir kanal Oluşturuldu")
+    .setTitle("#️⃣ Bir kanal Silindi")
     .addFields([
                 { name: "Kanal Adı", value: `${channel.name}`, inline: true },
                 { name: "Kanal Tipi", value: `${String(channel.type)
@@ -24,7 +24,7 @@ module.exports = async(client, channel) => {
                 { name: "Olusturulma Tarihi", value: `<t:${parseInt(channel.createdTimestamp / 1000)}:R>`, inline: true },
                 { name:"NSFW",value:`${channel.nsfw ? "✅ Açık" : "❌ Kapalı"}`,inline:true},
               ])
-              .setColor("Green")
+              .setColor("Red")
               .setFooter({text:`${channel.guild.name}`, iconURL: `${client.user.displayAvatarURL({ dynmaic: true })}`})
               .setTimestamp()
     
