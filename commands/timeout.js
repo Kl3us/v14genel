@@ -22,7 +22,7 @@ module.exports = {
 
       
     const user = interaction.options.getMember("user")
-    const time = interaction.option.getString("süre")
+    const time = interaction.options.getString("süre") 
     
     const timeout = ms(time)
     if(!timeout) return interaction.reply({ embeds: [{
@@ -31,7 +31,7 @@ module.exports = {
     }], ephemeral: true })
     
     await user.timeout(timeout)
-    
+    interaction.reply({ embeds: [{ color: 0x57F287, description: "✅ **|** `"+user.user.tag+"` başarıyla susturuldu." }] })
 
   }
 
