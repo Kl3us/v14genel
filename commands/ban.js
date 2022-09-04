@@ -1,4 +1,4 @@
-const { Client, EmbedBuilder } = require("discord.js");
+const { Client, EmbedBuilder, PermissionsBitField } = require("discord.js");
 
 module.exports = {
   name: "ban",
@@ -13,8 +13,13 @@ module.exports = {
 
   run: async(client, interaction, db) => {
 
-      
+     if(!interaction.member.permissions.has(PermissionsBitField.Flags.BanMembers)) {
+       return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Üyeleri Banla` yetkisine ihtiyacın var." }], ephemeral: true })
+     }  
+    
     const user = interaction.options.getUser("user")
+    
+    
     
     interaction.guild.members.ban(user)
     interaction.reply({ embeds: [{

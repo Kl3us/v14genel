@@ -1,4 +1,4 @@
-const { Client, EmbedBuilder } = require("discord.js");
+const { Client, EmbedBuilder, PermissionsBitField } = require("discord.js");
 
 module.exports = {
   name: "kick",
@@ -13,6 +13,9 @@ module.exports = {
 
   run: async(client, interaction, db) => {
 
+     if(!interaction.member.permissions.has(PermissionsBitField.Flags.KickMembers)) {
+       return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Üyeleri At` yetkisine ihtiyacın var." }], ephemeral: true })
+     }
       
     const user = interaction.options.getMember("user")
     

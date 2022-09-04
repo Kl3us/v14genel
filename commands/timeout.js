@@ -1,4 +1,4 @@
-const { Client, EmbedBuilder } = require("discord.js");
+const { Client, EmbedBuilder, PermissionsBitField } = require("discord.js");
 const ms = require("ms")
 
 module.exports = {
@@ -20,6 +20,9 @@ module.exports = {
 
   run: async(client, interaction, db) => {
 
+    if(!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
+       return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Yönetici` yetkisine ihtiyacın var." }], ephemeral: true })
+     }
       
     const user = interaction.options.getMember("user")
     const time = interaction.options.getString("süre") 

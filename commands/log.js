@@ -1,4 +1,4 @@
-const { Client, EmbedBuilder } = require("discord.js");
+const { Client, EmbedBuilder, PermissionsBitField } = require("discord.js");
 
 module.exports = {
   name: "log",
@@ -18,6 +18,9 @@ module.exports = {
 
   run: async(client, interaction, db) => {
 
+     if(!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
+       return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Yönetici` yetkisine ihtiyacın var." }], ephemeral: true })
+     }
     
     const log = db.fetch(`log_${interaction.guild.id}`)
     if(log) return interaction.reply({ embeds: [{

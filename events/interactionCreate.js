@@ -1,5 +1,6 @@
 const { Collection, EmbedBuilder } = require("discord.js");
 const db = require("orio.db");
+const yetki = require("../yetkiler.json");
 const { readdirSync } = require("fs");
 
 module.exports = async(client, interaction) => {
@@ -13,7 +14,6 @@ module.exports = async(client, interaction) => {
       const cmd = require(`../commands/${f}`);
 
       if(interaction.commandName.toLowerCase() === cmd.name.toLowerCase()) {
-
         return cmd.run(client, interaction, db);
 
 
