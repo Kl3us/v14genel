@@ -18,7 +18,7 @@ module.exports = {
 					.setStyle(ButtonStyle.Link),
         new ButtonBuilder()
 					.setLabel('Destek Sunucusu')
-          .setURL("https://discord.gg/xR29dY3g3C")
+          .setURL("https://discord.gg/auPYVPYhqr")
           .setEmoji("🏠")
 					.setStyle(ButtonStyle.Link),
         new ButtonBuilder()
@@ -30,7 +30,7 @@ module.exports = {
     
       const embed = new EmbedBuilder()
       .setTitle(`${client.user.username} - Yardım Menüsü`)
-      .setDescription("Merhabalar değerleri kullanıcımız, şuan sizlere toplam **8** komut ile hizmet vermekteyim, bot ile ilgili birkaç bilgi edinmek istiyorsan aşağıdaki menüden ilgili menüyü seçerek ilgili yazıya ulaşabilirsin.")
+      .setDescription("Merhabalar değerleri kullanıcımız, şuan sizlere toplam **18** komut ile hizmet vermekteyim, bot ile ilgili birkaç bilgi edinmek istiyorsan aşağıdaki menüden ilgili menüyü seçerek ilgili yazıya ulaşabilirsin.")
       .setColor("Blue")
       .addFields({
         name: "/ban",
