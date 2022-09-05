@@ -67,6 +67,11 @@ module.exports = {
         value: "Botun birkaç bilgisine göz atabilirsiniz.",
         inline: true
       },
+                     {
+        name: "/avatar",
+        value: "İstediğniz kişinin avatarına bakarsınız.",
+        inline: true
+      },
       {
         name: "/küfür engel",
         value: "Sunucudaki küfürleri engeller.",
