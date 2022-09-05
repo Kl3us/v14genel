@@ -4,7 +4,7 @@ const { TOKEN } = require("../config.json");
 
 module.exports = async (client) => {
 
-  const rest = new REST({ version: "10" }).setToken(TOKEN);
+  const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
   try {
     await rest.put(Routes.applicationCommands(client.user.id), {
       body: client.commands,
