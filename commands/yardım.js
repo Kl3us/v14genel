@@ -83,6 +83,11 @@ module.exports = {
         inline: true
       },
       {
+        name: "/nuke",
+        value: "Kanalı silip oluşturursunuz.",
+        inline: true
+      },
+      {
         name: "/ping",
         value: "Botun pingine bakarsınız.",
         inline: true
