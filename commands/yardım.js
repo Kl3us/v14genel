@@ -83,6 +83,11 @@ module.exports = {
         inline: true
       },
        {
+        name: "/davet",
+        value: "Botu sunucuna eklersin.",
+        inline: true
+      },
+       {
         name: "/kurucu",
         value: "Sunucunun kurucusuna bakarsınız.",
         inline: true
