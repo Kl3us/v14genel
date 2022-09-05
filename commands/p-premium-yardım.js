@@ -38,7 +38,7 @@ module.exports = {
         inline: true
       },
       {
-        name: "/premium-kaldor",
+        name: "/premium-kaldır",
         value: "Geliştirici kullanıcılarını premium sistemine ekler veya kaldırır..",
         inline: true
       },

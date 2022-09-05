@@ -15,7 +15,7 @@ module.exports = {
     run: async (client, interaction, db) => {
       
       
-      const owner = client.users.cache.get('978276967877054464').tag
+      const owner = client.users.cache.get('994343860526399638').tag
     
 		const cpu = os.cpus().map(c => c.model)[0]
 		var platform = os.platform()
@@ -31,7 +31,7 @@ module.exports = {
     .setTitle(`${client.user.username} - İstatistikleri!`)
 	.setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
 	.addFields(
-		{ name: 'Geliştirici', value: `<@978276967877054464> | ${owner}`},
+		{ name: 'Geliştirici', value: `<@994343860526399638> | ${owner}`},
 		{ name: 'İşlemci', value: `${cpu}`},
 		{ name: 'İşletim Sistemi', value: `${platform}`, inline: true},
 		{ name: 'Çalışma Süresi', value: `${Math.floor(up / 60)} Dakika`, inline: true},
