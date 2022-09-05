@@ -29,53 +29,23 @@ module.exports = {
 			);
     
       const embed = new EmbedBuilder()
-      .setTitle(`${client.user.username} - Yardım Menüsü`)
-      .setDescription("Merhabalar değerleri kullanıcımız, şuan sizlere toplam **18** komut ile hizmet vermekteyim, bot ile ilgili birkaç bilgi edinmek istiyorsan aşağıdaki menüden ilgili menüyü seçerek ilgili yazıya ulaşabilirsin.")
+      .setTitle(`${client.user.username} -Premium Yardım Menüsü`)
+      .setDescription("Merhabalar değerleri kullanıcımız,bu menü botumuzun premium menüsüdür.Premium alarak daha güzel komutlar kullanabilirsiniz.**Premium almak için BATN INC.#1312 ile iletişime geçiniz.**")
       .setColor("Blue")
       .addFields({
-        name: "/ban",
-        value: "Birini sunucudan banlayabilirsiniz.",
+        name: "/premium-ekle",
+        value: "Geliştirici kullanıcılarını premium sistemine ekler veya kaldırır..",
         inline: true
       },
       {
-        name: "/ban-list",
-        value: "Banlı Olan Kullanıcıları Görürsün.",
+        name: "/premium-kaldor",
+        value: "Geliştirici kullanıcılarını premium sistemine ekler veya kaldırır..",
         inline: true
       },
-                  {
-        name: "/unban",
-        value: "Kullanıcının Yasağını Kaldırırsın.",
-        inline: true
-      },
+     
       {
-        name: "/kick",
-        value: "Birini sunucudan atabilirsiniz.",
-        inline: true
-      },
-      {
-        name: "/log ayarla",
-        value: "Bot sunucunuzda gelişen tüm gelişmeleri belirlediğiniz log kanalına aktarır.",
-        inline: true
-      },
-      {
-        name: "/temizle",
-        value: "Sunucudan belirli bir miktar kadar mesaj siler.",
-        inline: true
-      },
-      {
-        name: "/timeout",
-        value: "Susturmak istediğiniz birini susturabilirsiniz.",
-        inline: true
-      },
-      {
-        name: "/yardım",
-        value: "Botun yardım menüsünü gösterir.",
-        inline: true
-      },
-   
-      {
-        name: "/reklam engel",
-        value: "Sunucudaki reklamları engeller.",
+        name: "/premium-sorgula",
+        value: "Premium sistemine dahil olup olmadığınızı öğrenin.",
         inline: true
       })
       .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })

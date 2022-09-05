@@ -33,6 +33,11 @@ module.exports = {
       .setDescription("Merhabalar değerleri kullanıcımız, şuan sizlere toplam **18** komut ile hizmet vermekteyim, bot ile ilgili birkaç bilgi edinmek istiyorsan aşağıdaki menüden ilgili menüyü seçerek ilgili yazıya ulaşabilirsin.")
       .setColor("Blue")
       .addFields({
+        name: "/premium-yardım",
+        value: "Premium sistemini görürsünüz.",
+        inline: true
+      },             
+      {
         name: "/ban",
         value: "Birini sunucudan banlayabilirsiniz.",
         inline: true

@@ -15,6 +15,8 @@ client.commands = (global.commands = []);
 
 const { readdirSync } = require("fs")
 const { TOKEN } = require("./config.json");
+const { PREFIX } = require("./config.json");
+
 
 /* Slash Komutları Yüklüyoruz */
 
