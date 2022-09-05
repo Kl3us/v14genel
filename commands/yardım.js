@@ -48,6 +48,11 @@ module.exports = {
         inline: true
       },
       {
+        name: "/temizle",
+        value: "Sunucudan belirli bir miktar kadar mesaj siler.",
+        inline: true
+      },
+      {
         name: "/timeout",
         value: "Susturmak istediğiniz birini susturabilirsiniz.",
         inline: true
@@ -105,7 +110,7 @@ module.exports = {
 		{ name: 'Sunucu Sayısı', value: `${client.guilds.cache.size}`},
 		{ name: 'Kullanıcı Sayısı', value: `${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0) + client.users.cache.size}`, inline: true},
 		{ name: 'Kanal Sayısı', value: `${client.channels.cache.size}`, inline: true},
-		{ name: 'Komut Sayısı', value: `6`},
+		{ name: 'Komut Sayısı', value: `9`},
 		{ name: 'Bot Versiyon', value: `**BETA**`, inline: true},
 		{ name: 'Discord.JS Versiyon', value: `${version}`, inline: true},
 		{ name: 'Node Versiyon', value: `${process.version}`, inline: true},

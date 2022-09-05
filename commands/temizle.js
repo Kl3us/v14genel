@@ -16,15 +16,15 @@ module.exports = {
   run: async(client, interaction, db) => {
 
      if(!interaction.member.permissions.has(PermissionsBitField.Flags.ManageMessages)) {
-       return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Üyeleri At` yetkisine ihtiyacın var." }], ephemeral: true })
+       return interaction.reply({ embeds: [{ color: 0xED4245, description: ":x: **|** Bu komutu kullanmak için `Mesajları Yönet` yetkisine ihtiyacın var." }], ephemeral: true })
      }
     
     const count = interaction.options.getInteger("count")
     
     interaction.reply({ embeds: [{
       color: 0x7289DA,
-      description: ""
-    }] })
+      description: "🚮 **|** `"+count+"` mesajı başarıyla çöp kutusuna gönderdim."
+    }], ephemeral: true })
     interaction.channel.bulkDelete(count, true)
     
     
