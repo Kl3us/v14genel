@@ -12,7 +12,7 @@ module.exports = async (client) => {
     console.error(error);
   }
   
-  client.user.setPresence({ activities: [{ name: '/yardım' }], status: 'online' });
+  client.user.setPresence({ activities: [{ name: '/yardım - '+client.guilds.cache.size+' sunucu' }], status: 'online' });
 
     console.log(`${client.user.tag} Aktif!`);
 };
