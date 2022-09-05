@@ -93,12 +93,12 @@ module.exports = {
         inline: true
       },
        {
-        name: "emojiler",
+        name: "/emojiler",
         value: "Sunucudaki emojileri görürsün.",
         inline: true
       },
       {
-        name: "emoji-yazı",
+        name: "/emoji-yazı",
         value: "Bota Emoji İle Yazı Yazdırırsın.",
         inline: true
       },
