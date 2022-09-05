@@ -38,6 +38,16 @@ module.exports = {
         inline: true
       },
       {
+        name: "/ban-list",
+        value: "Banlı Olan Kullanıcıları Görürsün.",
+        inline: true
+      },
+                  {
+        name: "/unban",
+        value: "Kullanıcının Yasağını Kaldırırsın.",
+        inline: true
+      },
+      {
         name: "/kick",
         value: "Birini sunucudan atabilirsiniz.",
         inline: true
@@ -67,9 +77,34 @@ module.exports = {
         value: "Botun birkaç bilgisine göz atabilirsiniz.",
         inline: true
       },
-                     {
+      {
+        name: "/ping",
+        value: "Botun pingine bakarsınız.",
+        inline: true
+      },
+       {
+        name: "/kurucu",
+        value: "Sunucunun kurucusuna bakarsınız.",
+        inline: true
+      },
+      {
         name: "/avatar",
         value: "İstediğniz kişinin avatarına bakarsınız.",
+        inline: true
+      },
+       {
+        name: "emojiler",
+        value: "Sunucudaki emojileri görürsün.",
+        inline: true
+      },
+      {
+        name: "emoji-yazı",
+        value: "Bota Emoji İle Yazı Yazdırırsın.",
+        inline: true
+      },
+       {
+        name: "/kanal-acıklama",
+        value: "Kanal'ın açıklamasını değiştirirsin.",
         inline: true
       },
       {
