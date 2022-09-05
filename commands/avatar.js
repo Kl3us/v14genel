@@ -14,14 +14,15 @@ module.exports = {
     ],
   run: async(client, interaction) => {
 
-    const user = interaction.options.getMember('user').displayAvatarURL({ dynamic: true, size: 1024 })
+    const user = interaction.options.getUser('user').displayAvatarURL({ dynamic: true, size: 1024 })
    
     const embed = new EmbedBuilder()
     .setColor("Blue")
+    .setTitle(interaction.options.getUser('user').tag)
     .setImage(user)
     .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
     
-    interaction.reply({ embebds: [embed] })
+    interaction.reply({ embeds: [embed] })
 }
 
 };
