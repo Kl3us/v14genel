@@ -1,5 +1,4 @@
-# Powerd By 'Roman
-
-BU ALTYAPI ROMAN TARAFINDAN KODLANIP, SAYGI DEĞER BETAYA HEDİYE EDİLMİŞTİR.
-
-BETA >>> YOUTUBE
+> 1) Altyapıyı **git** ile veya **manuel** olarak indirin.
+> 2) Projeyi açın.
+> 3) konsolu açıp `npm install` yazın, gerekli olan bütün modüller  inecektir.
+> 4) `node index.js` yazarak projenizi başlatın.

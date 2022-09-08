@@ -15,8 +15,6 @@ client.commands = (global.commands = []);
 
 const { readdirSync } = require("fs")
 const { TOKEN } = require("./config.json");
-const { PREFIX } = require("./config.json");
-
 
 /* Slash Komutları Yüklüyoruz */
 
@@ -58,7 +56,7 @@ console.log(`[EVENT] ${name} eventi yüklendi.`)
 
 /* Eventleri Yüklüyoruz */
 
-client.login(process.env.TOKEN || TOKEN).then(app => {
+client.login(TOKEN).then(app => {
   console.log(`[BOT] Token girişi başarılı.`)
 }).catch(app => {
   console.log(`[BOT] Token girşi başarısız.`)
