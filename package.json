@@ -1,20 +1,24 @@
 {
-  "name": "uptimebot",
-  "version": "0.0.1",
-  "description": "Discord Bot.",
+  "name": "raven",
+  "version": "9.9.9",
+  "description": "Discord.JS v14 Slash Uyumlu Altyapı",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-    "discord.js": "^14.3.0",
-    "easyembeds.js": "^0.0.3",
-    "raven.database": "^1.1.7",
-    "node-fetch": "^3.2.10"
-  },
-  "engines": {
-    "node": "16.x"
-  },
+  "author": "",
   "license": "MIT",
-  "keywords": []
+  "dependencies": {
+    "@discordjs/rest": "^1.1.0",
+    "croxydb": "^0.0.7",
+    "discord-api-types": "^0.37.5",
+    "discord.js": "^14.3.0",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "os": "^0.1.2",
+    "request": "^2.88.2"
+  },
+   "engines": {
+    "node": "16.x"
+  }
 }

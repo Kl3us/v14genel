@@ -1,14 +1,5 @@
 const { Collection, EmbedBuilder } = require("discord.js");
-const ravendb = require("raven.database");
-
-const db = new ravendb({
-	"dbName": "database", 
-  "dbPath": "ravendb", 
-  "noBlankData": true,
-  "readable": true,
-  "language": "en" 
-});
-
+const db = require("croxydb");
 const { readdirSync } = require("fs");
 
 module.exports = async(client, interaction) => {
