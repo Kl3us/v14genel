@@ -46,6 +46,21 @@ module.exports = async(client, interaction) => {
           value: "İnsanları banlarsınız.",
           inline: true
         },
+        {
+          name: "/unban",
+          value: "Kullanıcının Yasağını Kaldırırsın.",
+          inline: true
+        },
+         {
+          name: "/rol-al",
+          value: "Kullanıcının Yasağını Kaldırırsın.",
+          inline: true
+        },
+        {
+          name: "/unban",
+          value: "Kullanıcının Yasağını Kaldırırsın.",
+          inline: true
+        },
       )
       .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setTimestamp()

@@ -170,21 +170,21 @@ client.on("interactionCreate", async interaction => {
   let message = await interaction.channel.messages.fetch(interaction.message.id)  
   if(interaction.customId == "moderasyon") {
 const embed = new Discord.EmbedBuilder()
-.setTitle("Godzilla - Yardım Menüsü!")
+.setTitle("Wegna Yardım Menüsü!")
 .setDescription("/ban-list - **Banlı Kullanıcıları Gösterir!**\n/ban - **Bir Üyeyi Yasaklarsın!**\n/emojiler - **Emojileri Görürsün!**\n/forceban - **ID İle Bir Kullanıcıyı Yasaklarsın!**\n/giriş-çıkış - **Giriş çıkış kanalını ayarlarsın!**\n/kanal-açıklama - **Kanalın Açıklamasını Değiştirirsin!**\n/kick - **Bir Üyeyi Atarsın!**\n/küfür-engel - **Küfür Engel Sistemini Açıp Kapatırsın!**\n/oto-rol - **Otorolü Ayarlarsın!**\n/oto-tag - **Oto Tagı Ayarlarsın!**\n/oylama - **Oylama Açarsın!**\n/reklam-engel - **Reklam Engel Sistemini Açarsın!**\n/rol-al - **Rol Alırsın**\n/rol-oluştur - **Rol Oluşturursun!**\n/rol-ver - **Rol Verirsin!**\n/sa-as - **Selam Sistemine Bakarsın!**\n/temizle - **Mesaj Silersin!**\n/unban - **Bir üyenin yasağını kaldırırsın!**")
 .setColor("Random")
 interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "kayıt") {
     const embed = new Discord.EmbedBuilder()
-    .setTitle("Godzilla - Yardım Menüsü!")
+    .setTitle("Wegna Yardım Menüsü!")
     .setDescription("/kayıtlı-rol - **Kayıtlı Rolünü Ayarlarsın!**\n/kayıt-et - **Bir Üyeyi Kayıt Edersin!**")
     .setColor("Random")
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
   }
   if(interaction.customId == "kullanıcı") {
     const embed = new Discord.EmbedBuilder()
-    .setTitle("Godzilla - Yardım Menüsü!")
+    .setTitle("Wegna Yardım Menüsü!")
     .setDescription("/avatar - **Bir Kullanıcının Avatarına Bakarsın!**\n/afk - **Sebepli Afk Olursun!**\n/emoji-yazı - **Bota Emoji İle Yazı Yazdırırsın!**\n/istatistik - **Bot istatistiklerini gösterir!**\n/kurucu-kim - **Kurucuyu Gösterir!**\n/ping - **Botun pingini gösterir!**\n/yardım - **Yardım Menüsünü Gösterir!**")
     .setColor("Random")
     interaction.reply({embeds: [embed], components: [], ephemeral: true})
