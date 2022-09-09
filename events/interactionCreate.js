@@ -42,8 +42,8 @@ module.exports = async(client, interaction) => {
           inline: true
         },
         {
-          name: "/ban-list",
-          value: "Banlı kişileri görürsünüz.",
+          name: "/ban",
+          value: "İnsanları banlarsınız.",
           inline: true
         },
       )
@@ -59,7 +59,16 @@ module.exports = async(client, interaction) => {
       .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
       .addFields(
-        
+         {
+          name: "/davet",
+          value: "Botu davet edin.",
+          inline: true
+        },
+        {
+          name: "/yardım",
+          value: "Botun yardım menüsü.",
+          inline: true
+        },
       )
       .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setTimestamp()
@@ -73,7 +82,16 @@ module.exports = async(client, interaction) => {
       .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
       .addFields(
-        
+         {
+          name: "/istatisk",
+          value: "Botun bilgi menüsüne erişin.",
+          inline: true
+        },
+        {
+          name: "/ping",
+          value: "Botun pingi.",
+          inline: true
+        },
       )
       .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setTimestamp()
