@@ -1,4 +1,4 @@
-const { Client, EmbedBuilder } = require("discord.js");
+const { Client, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, SelectMenuBuilder  } = require("discord.js");
 const Discord = require("discord.js")
 module.exports = {
   name: "yardım",
@@ -8,25 +8,16 @@ module.exports = {
 
   run: async(client, interaction) => {
 
+    
     const embed = new EmbedBuilder()
-    .setTitle("Wegna Yardım Menüsü")
-    .setDescription("**・ Moderasyon Sistemi ➥ **\n > Moderasyon Sistemi hakkında bilgi alabilirsiniz.⠀⠀⠀⠀⠀\n\n**・Kayıt Sistemi ➥ **\n> Kayıt Sistemi hakkında bilgi alabilirsiniz.\n\n**・Kullanıcı Sistemi ➥ **\n> Kullanıcı Sistemi hakkında bilgi alabilirsiniz.")
-    .setColor("Random")
-    const row = new Discord.ActionRowBuilder()
-    .addComponents(
-new Discord.ButtonBuilder()
-.setLabel("Moderasyon")
-.setStyle(Discord.ButtonStyle.Secondary)
-.setCustomId("moderasyon"),
-new Discord.ButtonBuilder()
-.setLabel("Kayıt")
-.setStyle(Discord.ButtonStyle.Success)
-.setCustomId("kayıt"),
-new Discord.ButtonBuilder()
-.setLabel("Kullanıcı")
-.setStyle(Discord.ButtonStyle.Primary)
-.setCustomId("kullanıcı"))
-interaction.reply({embeds: [embed], components: [row], ephemeral: true})
+    .setColor("Blue")
+    .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
+    .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
+    .addFields({ name: "Butonlar > 🔧", value: "Moderasyon komutlarını sana gösterir.", inline: true })
+    .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
+    .setTimestamp()
+    
+    interaction.reply({ embeds: [embed] })
   }
 
 };
