@@ -25,5 +25,24 @@ module.exports = async(client, interaction) => {
 
 
   }
+  
+  if(interaction.isSelectMenu()) {
+    if(interaction.customId === "select") {
+      
+      const value = interaction.values[0]
+      if(value === "first_option") {
+        
+      }
+      
+      if(value === "second_option") {
+        
+      }
+      
+      if(value === "third_option") {
+        
+      }
+      
+    }
+  }
 
 };
