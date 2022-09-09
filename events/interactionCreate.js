@@ -46,19 +46,55 @@ module.exports = async(client, interaction) => {
           value: "İnsanları banlarsınız.",
           inline: true
         },
+           {
+          name: "/forceban",
+          value: "ID ile kullanıcı yasaklarsın.",
+          inline: true
+        },
         {
           name: "/unban",
           value: "Kullanıcının Yasağını Kaldırırsın.",
+          inline: true
+        },
+           {
+          name: "/kick",
+          value: "Kullanıcıyı Sunucudan Atarsın.",
           inline: true
         },
          {
           name: "/rol-al",
-          value: "Kullanıcının Yasağını Kaldırırsın.",
+          value: "Birinden Rol Alırsın.",
           inline: true
         },
         {
-          name: "/unban",
-          value: "Kullanıcının Yasağını Kaldırırsın.",
+          name: "/rol-ver",
+          value: "Birine Rol Verirsin.",
+          inline: true
+        },
+         {
+          name: "/reklam-engel",
+          value: "Reklam Engel Sistemini Açıp Kapatırsın.",
+          inline: true
+        },
+            {
+          name: "/sa-as",
+          value: "Selam Sistemini Açıp Kapatırsın.",
+          inline: true
+        },
+        
+             {
+          name: "/oto-tag",
+          value: "Sunucuya giren üyelere otomatik tag verir.",
+          inline: true
+        },
+                 {
+          name: "/oto-rol",
+          value: "Yeni Gelenlere Otomatik Rol Verir.",
+          inline: true
+        },
+         {
+          name: "/rol-oluştur",
+          value: "Yeni Bir Rol Oluşturursun.",
           inline: true
         },
       )
