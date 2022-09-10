@@ -98,13 +98,52 @@ module.exports = async(client, interaction) => {
           inline: true
         },
       )
+          
+      .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
+      .setTimestamp()
+          
+      interaction.update({ embeds: [embed] })    
+      }
+      if(interaction.isSelectMenu()) {
+    if(interaction.customId === "select") {
+      
+      const value = interaction.values[0]
+      if(value === "second_option") {
+          const embed = new EmbedBuilder()
+      .setColor("Blue")
+      .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
+      .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
+      .addFields(
+        {
+          name: "/ban-list",
+          value: "Banlı kişileri görürsünüz.",
+          inline: true
+        },
+        
+             {
+          name: "/oto-tag",
+          value: "Sunucuya giren üyelere otomatik tag verir.",
+          inline: true
+        },
+                 {
+          name: "/oto-rol",
+          value: "Yeni Gelenlere Otomatik Rol Verir.",
+          inline: true
+        },
+         {
+          name: "/rol-oluştur",
+          value: "Yeni Bir Rol Oluşturursun.",
+          inline: true
+        },
+      )
+          
       .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setTimestamp()
           
       interaction.update({ embeds: [embed] })    
       }
       
-      if(value === "second_option") {
+      if(value === "third_option") {
           const embed = new EmbedBuilder()
       .setColor("Blue")
       .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
@@ -127,7 +166,7 @@ module.exports = async(client, interaction) => {
       interaction.update({ embeds: [embed] })  
       }
       
-      if(value === "third_option") {
+      if(value === "four_option") {
           const embed = new EmbedBuilder()
       .setColor("Blue")
       .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
