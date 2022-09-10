@@ -13,7 +13,7 @@ module.exports = {
     .setColor("Blue")
     .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
     .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
-    .addFields({ name: "Moderasyon > 🔧", value: "Moderasyon komutlarını sana gösterir.", inline: true }, { name: "Kullanıcı >  👤", value: "Kullanıcı komutlarını sana gösterir.", inline: true }, { name: "Çekiliş >  🎉", value: "Çekiliş komutlarını sana gösterir.", inline: true })
+    .addFields({ name: "Moderasyon > 🔧", value: "Moderasyon komutlarını sana gösterir.", inline: true }, { name: "Kullanıcı >  👤", value: "Kullanıcı komutlarını sana gösterir.", inline: true }, { name: "Çekiliş >  🎉", value: "Çekiliş komutlarını sana gösterir.", inline: true }, { name: "Uptime >  🧼", value: "Uptime komutlarını sana gösterir.", inline: true })
     .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
     .setTimestamp()
     
@@ -40,6 +40,12 @@ module.exports = {
               emoji: "🎉",
 							description: 'Çekiliş komutlarını sana gösterir.',
 							value: 'sixth_option',
+						},
+            {
+							label: 'Uptime',
+              emoji: "🧼",
+							description: 'Uptime komutlarını sana gösterir.',
+							value: 'zorti_option',
 						},
 					),
 			);
