@@ -121,6 +121,11 @@ module.exports = async(client, interaction) => {
           value: "Botun bilgi menüsüne erişin.",
           inline: true
         },
+         {
+          name: "/davet",
+          value: "Botu sunucuna davet edersin.",
+          inline: true
+        },
         {
           name: "/ping",
           value: "Botun pingi.",
