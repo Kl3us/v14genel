@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const { Client, EmbedBuilder, PermissionsBitField } = require("discord.js");
 module.exports = {
     name:"davet",
-    description: 'Botu davet edersin!',
+    description: 'Wegna Botu davet edersin!',
     type:1,
     options: [
 
