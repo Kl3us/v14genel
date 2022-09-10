@@ -149,11 +149,8 @@ module.exports = async(client, interaction) => {
           value: "Bir çekilişi sona erdirirsin.",
           inline: true
         },
-         {
-          name: "/çekiliş-bitir",
-          value: "Bir çekilişi sona erdirirsin.",
-          inline: true
-        },      .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
+      )
+      .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setTimestamp()
           
       interaction.update({ embeds: [embed] })  
@@ -162,4 +159,4 @@ module.exports = async(client, interaction) => {
     }
    
 
-};
+};  
