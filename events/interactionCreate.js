@@ -132,6 +132,32 @@ module.exports = async(client, interaction) => {
           
       interaction.update({ embeds: [embed] })  
       }
+    
+    if(value === "sixth_option") {
+          const embed = new EmbedBuilder()
+      .setColor("Blue")
+      .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
+      .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
+      .addFields(
+         {
+          name: "/çekiliş-başlat",
+          value: "Bir çekiliş oluşturursun.",
+          inline: true
+        },
+        {
+          name: "/çekiliş-bitir",
+          value: "Bir çekilişi sona erdirirsin.",
+          inline: true
+        },
+         {
+          name: "/çekiliş-bitir",
+          value: "Bir çekilişi sona erdirirsin.",
+          inline: true
+        },      .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
+      .setTimestamp()
+          
+      interaction.update({ embeds: [embed] })  
+      }
       
     }
    
