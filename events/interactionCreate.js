@@ -27,9 +27,11 @@ module.exports = async(client, interaction) => {
   }
   
   if(interaction.isSelectMenu()) {
+    
+    const value = interaction.values[0]
     if(interaction.customId === "select") {
       
-      const value = interaction.values[0]
+      
       if(value === "first_option") {
           const embed = new EmbedBuilder()
       .setColor("Blue")
@@ -87,7 +89,7 @@ module.exports = async(client, interaction) => {
           value: "Sunucuya giren üyelere otomatik tag verir.",
           inline: true
         },
-                 {
+         {
           name: "/oto-rol",
           value: "Yeni Gelenlere Otomatik Rol Verir.",
           inline: true
@@ -99,73 +101,15 @@ module.exports = async(client, interaction) => {
         },
       )
           
-      .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
-      .setTimestamp()
           
-      interaction.update({ embeds: [embed] })    
-      }
-      if(interaction.isSelectMenu()) {
-    if(interaction.customId === "select") {
-      
-      const value = interaction.values[0]
-      if(value === "second_option") {
-          const embed = new EmbedBuilder()
-      .setColor("Blue")
-      .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
-      .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
-      .addFields(
-        {
-          name: "/ban-list",
-          value: "Banlı kişileri görürsünüz.",
-          inline: true
-        },
-        
-             {
-          name: "/oto-tag",
-          value: "Sunucuya giren üyelere otomatik tag verir.",
-          inline: true
-        },
-                 {
-          name: "/oto-rol",
-          value: "Yeni Gelenlere Otomatik Rol Verir.",
-          inline: true
-        },
-         {
-          name: "/rol-oluştur",
-          value: "Yeni Bir Rol Oluşturursun.",
-          inline: true
-        },
-      )
           
       .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
       .setTimestamp()
           
       interaction.update({ embeds: [embed] })    
       }
-      
-      if(value === "third_option") {
-          const embed = new EmbedBuilder()
-      .setColor("Blue")
-      .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
-      .setDescription(`Merhaba değerli kullanıcımız, şuan size ve sizlere toplam **28** etkileşimli komut ile beraber hizmet etmekteyim, bir sorun oluşursa [destek sunucu]([http://discord.gg/altyapilar)ma sizleri beklerim.`)
-      .addFields(
-         {
-          name: "/davet",
-          value: "Botu davet edin.",
-          inline: true
-        },
-        {
-          name: "/yardım",
-          value: "Botun yardım menüsü.",
-          inline: true
-        },
-      )
-      .setFooter({ text: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ dynmaic: true }) })
-      .setTimestamp()
-          
-      interaction.update({ embeds: [embed] })  
       }
-      
+  
       if(value === "four_option") {
           const embed = new EmbedBuilder()
       .setColor("Blue")
@@ -190,6 +134,6 @@ module.exports = async(client, interaction) => {
       }
       
     }
-  }
+   
 
 };
